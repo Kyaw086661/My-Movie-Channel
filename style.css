@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Kolker+Brush&family=Poppins:ital,wght@0,400;0,500;1,300;1,400&family=Roboto+Condensed:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #ffffff50;
+    --bg-color: black;
+    --color: #ffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+    height: 2000px;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+    background-color: gray;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color);
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.menu a {
+    color: var(--color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.menu a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.menu a:hover::after,
+.menu .active::after {
+    width: 100%;
+}
+
+.btn {
+    color: var(--color);
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: var(--main-color);
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #2e292950;
+}
