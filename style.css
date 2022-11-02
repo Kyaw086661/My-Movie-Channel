@@ -10,7 +10,7 @@
 }
 
 :root {
-    --main-color: #ffffff50;
+    --main-color: rgb(179, 38, 38);
     --bg-color: black;
     --color: #ffff;
 }
@@ -85,5 +85,67 @@ header {
 }
 
 .btn:hover {
-    background-color: #2e292950;
+    background-color: rgb(137, 56, 56);
+}
+
+
+/* home cover  */
+
+.container {
+    width: 100%;
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover;
+    object-position: center; */
+    opacity: 0.7;
+}
+
+.container .img-text {
+    margin-left: 150px;
+}
+
+.img-text span {
+    color: var(--color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.img-text h1 {
+    color: var(--color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.img-text .play {
+    position: absolute;
+    right: 4rem;
+    bottom: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-text .play .bx {
+    color: var(--color);
+    font-size: 2rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid rgb(1, 2, 3, 0.5);
+}
+
+.img-text .play:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+    filter: brightness(1.5);
 }
